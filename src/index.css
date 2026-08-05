@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pk-night: #010b05;
+  --color-pk-deep: #021a0c;
+  --color-pk-forest: #01411c;
+  --color-pk-green: #0a7a3a;
+  --color-pk-mint: #1db954;
+  --color-pk-cream: #f4f7f2;
+  --color-pk-white: #f8faf8;
+  --color-pk-gold: #c9a227;
+  --color-pk-mist: #8ba894;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    background: var(--color-pk-night);
+    color: var(--color-pk-cream);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body.light {
+    background: #f3f6f1;
+    color: #0a1f12;
+  }
+
+  body.light .text-pk-cream {
+    color: #0a1f12;
+  }
+
+  body.light .text-pk-mist {
+    color: #3d5c48;
+  }
+
+  body.light .border-white\/10,
+  body.light .border-white\/5 {
+    border-color: color-mix(in oklab, #01411c 12%, transparent);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-pk-green) 55%, transparent);
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-pk-mint);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    background: color-mix(in oklab, white 6%, transparent);
+    border: 1px solid color-mix(in oklab, white 12%, transparent);
+    backdrop-filter: blur(18px);
+  }
+
+  .light .glass {
+    background: color-mix(in oklab, white 72%, transparent);
+    border: 1px solid color-mix(in oklab, #01411c 12%, transparent);
+  }
+
+  .gradient-glow {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in oklab, #0a7a3a 35%, transparent), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 60%, color-mix(in oklab, #c9a227 8%, transparent), transparent),
+      var(--color-pk-night);
+  }
+
+  .light .gradient-glow {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in oklab, #0a7a3a 18%, transparent), transparent),
+      #f3f6f1;
+  }
+
+  .section-pad {
+    padding-inline: clamp(1.25rem, 4vw, 5rem);
+    padding-block: clamp(4.5rem, 12vh, 8rem);
+  }
+
+  .display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom cursor hide on fine pointers when custom cursor active */
+@media (pointer: fine) {
+  body.custom-cursor,
+  body.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}

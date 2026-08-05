@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minar-e-pakistan
+* source:	https://sketchfab.com/3d-models/minar-e-pakistan-eb3a6e9b06a34b30a8e101c6631040a8
+* author:	talhataram (https://sketchfab.com/talhataram)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minar-e-pakistan" (https://sketchfab.com/3d-models/minar-e-pakistan-eb3a6e9b06a34b30a8e101c6631040a8) by talhataram (https://sketchfab.com/talhataram) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
