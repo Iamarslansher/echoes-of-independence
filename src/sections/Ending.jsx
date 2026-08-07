@@ -3,6 +3,7 @@ import PakistanFlag from '../components/effects/PakistanFlag'
 import Fireworks from '../components/effects/Fireworks'
 import Starfield from '../components/effects/Starfield'
 import Button from '../components/ui/Button'
+import BadgeShelf from '../components/ui/BadgeShelf'
 
 export default function Ending() {
   return (
@@ -34,7 +35,17 @@ export default function Ending() {
         </motion.p>
 
         <motion.div
-          className="mt-12"
+          className="mt-14 mb-4"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.35, duration: 0.7 }}
+        >
+          <BadgeShelf />
+        </motion.div>
+
+        <motion.div
+          className="mt-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

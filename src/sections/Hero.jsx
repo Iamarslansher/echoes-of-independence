@@ -8,9 +8,10 @@ import PakistanFlag from '../components/effects/PakistanFlag'
 import TypingText from '../components/ui/TypingText'
 import Button from '../components/ui/Button'
 import { useApp } from '../context/AppContext'
+import { easterEggFacts } from '../data/easterEggs'
 
 export default function Hero() {
-  const { soundOn, anthemOn, toggleSound, muted, toggleMute, loaderDone } = useApp()
+  const { soundOn, anthemOn, toggleSound, muted, toggleMute, loaderDone, revealSecret } = useApp()
   const playing = soundOn || anthemOn
   const audioLive = playing && !muted
 
@@ -23,12 +24,15 @@ export default function Hero() {
       <Particles count={22} />
       <Fog />
 
-      {/* Distant soft moon wash — kept subtle so emblem glow remains primary */}
-      <motion.div
-        className="pointer-events-none absolute right-[10%] top-[14%] h-20 w-20 rounded-full bg-[radial-gradient(circle,rgba(232,238,221,0.55),transparent_70%)] blur-sm md:h-28 md:w-28"
-        aria-hidden
+      {/* Distant soft moon wash — kept subtle so emblem glow remains primary. Hidden easter egg: click it. */}
+      <motion.button
+        type="button"
+        onClick={() => revealSecret(easterEggFacts.moon, 'secret-star')}
+        aria-label="A quiet moon"
+        className="absolute right-[10%] top-[14%] h-20 w-20 cursor-pointer rounded-full bg-[radial-gradient(circle,rgba(232,238,221,0.55),transparent_70%)] blur-sm md:h-28 md:w-28"
         animate={{ y: [0, 8, 0], opacity: [0.55, 0.8, 0.55] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        whileHover={{ scale: 1.1 }}
       />
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 pt-24 text-center">
@@ -39,7 +43,14 @@ export default function Hero() {
           className="relative mb-10"
         >
           <CrescentStarGlow />
-          <PakistanFlag className="relative z-10 mx-auto h-28 w-44 md:h-36 md:w-56" />
+          <button
+            type="button"
+            onClick={() => revealSecret(easterEggFacts.flag, 'secret-star')}
+            aria-label="The flag of Pakistan"
+            className="relative z-10 mx-auto block cursor-pointer"
+          >
+            <PakistanFlag className="h-28 w-44 md:h-36 md:w-56" />
+          </button>
         </motion.div>
 
         <motion.p

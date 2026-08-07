@@ -2,12 +2,15 @@ import { useEffect, useState } from 'react'
 import { timelineYears } from '../data/timeline'
 
 /** Track which timeline year / section is most visible while scrolling */
-export function useActiveJourney() {
+export function useActiveJourney(ready = true) {
   const [activeYear, setActiveYear] = useState(timelineYears[0].year)
   const [activeSection, setActiveSection] = useState('hero')
   const [mood, setMood] = useState('night')
 
   useEffect(() => {
+    // Sections don't exist in the DOM until the loader finishes and
+    // JourneyPage mounts — wait for that instead of observing nothing.
+    if (!ready) return
     const sectionIds = [
       'hero',
       'before',
@@ -72,7 +75,7 @@ export function useActiveJourney() {
     })
 
     return () => observers.forEach((o) => o.disconnect())
-  }, [])
+  }, [ready])
 
   return { activeYear, activeSection, mood, setMood, setActiveYear }
 }

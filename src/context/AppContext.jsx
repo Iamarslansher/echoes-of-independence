@@ -17,7 +17,7 @@ export function AppProvider({ children }) {
 
   const narration = useNarration()
   const achievements = useAchievements()
-  const journey = useActiveJourney()
+  const journey = useActiveJourney(loaderDone)
 
   useEffect(() => {
     document.body.classList.toggle('light', theme === 'light')

@@ -332,13 +332,18 @@ export const contributions = [
 export const navLinks = [
   { href: '#hero', label: 'Begin' },
   { href: '#before', label: 'Origins' },
+  { href: '#newspaper', label: 'Headlines' },
   { href: '#movement', label: 'Movement' },
   { href: '#independence', label: '1947' },
   { href: '#migration', label: 'Migration' },
   { href: '#wars', label: 'Sacrifice' },
+  { href: '#then-now', label: 'Then vs Now' },
+  { href: '#museum', label: 'Museum' },
   { href: '#achievements', label: 'Achievements' },
+  { href: '#innovators', label: 'Innovators' },
   { href: '#current', label: 'Today' },
   { href: '#challenges', label: 'Hope' },
   { href: '#future', label: 'Future' },
   { href: '#contribute', label: 'Contribute' },
+  { href: '#quiz', label: 'Quiz' },
 ]

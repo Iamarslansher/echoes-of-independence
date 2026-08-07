@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { HiOutlineMoon, HiOutlineSun, HiOutlineVolumeOff, HiOutlineVolumeUp, HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
 import { useApp } from '../../context/AppContext'
 import { navLinks } from '../../data/journey'
+import NarratorControl from './NarratorControl'
 
 const Logo = '/images/logo.png'
 
@@ -44,6 +45,7 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <NarratorControl />
           <button
             type="button"
             onClick={toggleSound}
