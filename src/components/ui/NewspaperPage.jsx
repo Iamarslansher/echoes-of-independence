@@ -87,11 +87,23 @@ export default function NewspaperPage({ edition }) {
               initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
               animate={{ opacity: 1, clipPath: 'inset(0 0% 0 0)' }}
               transition={{ duration: 0.8, delay: 1.1, ease: 'easeOut' }}
-              className="flex h-32 w-full items-center justify-center border-2 border-[#2a2113]/60 bg-[#d8c9a3] sm:h-36 sm:w-40"
+              className="h-32 w-full overflow-hidden border-2 border-[#2a2113]/60 bg-[#d8c9a3] sm:h-36 sm:w-40"
             >
-              <span className="px-2 text-center font-serif text-[10px] uppercase tracking-[0.25em] text-[#5a4726]">
-                {edition.imageLabel}
-              </span>
+              {edition.image ? (
+                <img
+                  src={edition.image}
+                  alt={edition.imageLabel}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                  style={{ filter: 'sepia(0.5) contrast(1.05)' }}
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center">
+                  <span className="px-2 text-center font-serif text-[10px] uppercase tracking-[0.25em] text-[#5a4726]">
+                    {edition.imageLabel}
+                  </span>
+                </div>
+              )}
             </motion.div>
           </div>
         </div>

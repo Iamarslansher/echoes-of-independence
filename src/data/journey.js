@@ -61,6 +61,7 @@ export const leaders = [
     name: 'Muhammad Ali Jinnah',
     role: 'Quaid-e-Azam · Founder of Pakistan',
     years: '1876 – 1948',
+    image: '/images/gallery/jinnah-portrait.jpg',
     quote: 'Unity, Faith, Discipline.',
     bio: 'A brilliant constitutional lawyer who led the Pakistan Movement with legal precision and unwavering resolve, becoming the nation’s first Governor-General.',
     facts: [
@@ -73,6 +74,7 @@ export const leaders = [
     name: 'Allama Muhammad Iqbal',
     role: 'Poet-Philosopher · Spiritual Father',
     years: '1877 – 1938',
+    image: '/images/gallery/iqbal-portrait.jpg',
     quote: 'Nations are born in the hearts of poets; they prosper and die in the hands of politicians.',
     bio: 'Through poetry and political thought, Iqbal awakened a generation to selfhood (khudi) and the vision of a Muslim homeland.',
     facts: [
@@ -85,6 +87,7 @@ export const leaders = [
     name: 'Fatima Jinnah',
     role: 'Madar-e-Millat · Mother of the Nation',
     years: '1893 – 1967',
+    image: '/images/gallery/fatima-jinnah-portrait.jpg',
     quote: 'The success of a nation depends upon the readiness of its people to share responsibility.',
     bio: 'Dental surgeon, political activist, and steadfast companion to her brother — a symbol of women’s leadership in the Movement.',
     facts: [
@@ -97,6 +100,7 @@ export const leaders = [
     name: 'Liaquat Ali Khan',
     role: 'First Prime Minister',
     years: '1895 – 1951',
+    image: '/images/gallery/liaquat-ali-khan-portrait.jpg',
     quote: 'Pakistan is proud of her youth, particularly the students.',
     bio: 'Right-hand of Jinnah and Pakistan’s first Prime Minister, he steered early statecraft through fragile post-Partition years.',
     facts: [

@@ -69,16 +69,27 @@ export default function MuseumCard({ artifact, index }) {
         >
           {/* Front */}
           <div
-            className="glass absolute inset-0 flex flex-col justify-between rounded-2xl p-5"
+            className="glass absolute inset-0 flex flex-col justify-between overflow-hidden rounded-2xl p-5"
             style={{ backfaceVisibility: 'hidden' }}
           >
-            <div className="flex items-center justify-between">
+            {artifact.image && (
+              <>
+                <img
+                  src={artifact.image}
+                  alt={artifact.title}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10" />
+              </>
+            )}
+            <div className="relative flex items-center justify-between">
               <span className="text-[10px] uppercase tracking-[0.3em] text-pk-mint">
                 {artifact.category}
               </span>
               <span className="font-mono text-[10px] text-pk-mist">{artifact.era}</span>
             </div>
-            <div>
+            <div className="relative">
               <h3 className="display text-xl text-pk-cream">{artifact.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-pk-mist">{artifact.front}</p>
             </div>

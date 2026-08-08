@@ -18,7 +18,14 @@ export default function ThenNow() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {thenNowComparisons.map((c) => (
-            <BeforeAfterSlider key={c.id} title={c.title} then={c.then} now={c.now} />
+            <BeforeAfterSlider
+              key={c.id}
+              title={c.title}
+              then={c.then}
+              now={c.now}
+              thenImage={c.thenImage}
+              nowImage={c.nowImage}
+            />
           ))}
         </div>
       </div>

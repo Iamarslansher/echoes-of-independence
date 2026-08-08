@@ -7,6 +7,7 @@ import CrescentStarGlow from '../components/effects/CrescentStarGlow'
 import PakistanFlag from '../components/effects/PakistanFlag'
 import TypingText from '../components/ui/TypingText'
 import Button from '../components/ui/Button'
+import IndependenceBadge from '../components/ui/IndependenceBadge'
 import { useApp } from '../context/AppContext'
 import { easterEggFacts } from '../data/easterEggs'
 
@@ -36,6 +37,8 @@ export default function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 pt-24 text-center">
+        <IndependenceBadge className="mb-8" />
+
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={loaderDone ? { opacity: 1, scale: 1 } : {}}

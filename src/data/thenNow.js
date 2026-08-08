@@ -4,18 +4,24 @@ export const thenNowComparisons = [
     title: 'Lahore',
     then: 'Walled city lanes, horse carriages, and the echo of mushairas under colonial rule.',
     now: 'Metro lines, tech parks, universities, and a creative capital of culture and startups.',
+    thenImage: '/images/gallery/lahore-then.jpg',
+    nowImage: '/images/gallery/lahore-now.jpg',
   },
   {
     id: 'karachi',
     title: 'Karachi',
     then: 'A growing port city under the Raj — warehouses, docks, and monsoon trade winds.',
     now: 'Pakistan’s financial engine — fintech, freelancers, ports, and a global coastline hub.',
+    thenImage: '/images/gallery/karachi-then.jpg',
+    nowImage: '/images/gallery/karachi-now.jpg',
   },
   {
     id: 'islamabad',
     title: 'Islamabad',
     then: 'Hills and scrubland before the capital was planned — quiet Margalla foothills.',
     now: 'A planned capital of embassies, universities, policy, and green boulevards.',
+    thenImage: '/images/gallery/islamabad-then.jpg',
+    nowImage: '/images/gallery/islamabad-now.jpg',
   },
   {
     id: 'infra',
@@ -34,5 +40,6 @@ export const thenNowComparisons = [
     title: 'Technology',
     then: 'Ink, typewriters, and radio — news traveling at the speed of paper.',
     now: 'Smartphones, cloud, AI labs, and a generation shipping software worldwide.',
+    nowImage: '/images/gallery/ai-robot-flag.jpg',
   },
 ]

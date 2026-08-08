@@ -13,6 +13,25 @@ export default function Migration() {
           subtitle="One of history’s largest displacements — families crossing new borders with little more than hope and memory."
         />
 
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative mb-10 overflow-hidden rounded-2xl border border-white/10"
+        >
+          <img
+            src="/images/gallery/migration-train.jpg"
+            alt="Refugees crowding a train during the 1947 Partition migration"
+            loading="lazy"
+            className="h-56 w-full object-cover sm:h-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-pk-night via-pk-night/10 to-transparent" />
+          <p className="absolute bottom-3 left-4 text-[11px] uppercase tracking-[0.25em] text-pk-mist/80">
+            A refugee train, 1947
+          </p>
+        </motion.div>
+
         {/* Animated train */}
         <div className="relative mb-16 h-28 overflow-hidden border-y border-white/5">
           <div className="absolute inset-x-0 bottom-8 h-px bg-pk-mist/30" />

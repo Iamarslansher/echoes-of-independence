@@ -29,6 +29,25 @@ export default function FuturePakistan() {
           subtitle="AI, green energy, space, and a digital economy — the skyline we have not built yet."
         />
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative mb-12 overflow-hidden rounded-3xl border border-pk-mint/15"
+        >
+          <img
+            src="/images/gallery/futuristic-city.jpg"
+            alt="A concept rendering of a future Pakistani skyline"
+            loading="lazy"
+            className="h-56 w-full object-cover sm:h-72"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-pk-night via-transparent to-transparent" />
+          <p className="absolute bottom-3 left-4 text-[11px] uppercase tracking-[0.25em] text-pk-mist/80">
+            A vision, not a forecast
+          </p>
+        </motion.div>
+
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {futureVisions.map((v, i) => (
             <motion.div

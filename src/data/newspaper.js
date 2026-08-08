@@ -34,5 +34,6 @@ export const newspaperEditions = [
     subhead: 'At midnight, a new dominion rises — green flag against the night sky',
     body: 'Quaid-e-Azam Muhammad Ali Jinnah takes oath in Karachi. Millions cross new borders. The world watches as a nation steps into dawn.',
     imageLabel: 'Karachi · 1947',
+    image: '/images/gallery/leaders-group.jpg',
   },
 ]

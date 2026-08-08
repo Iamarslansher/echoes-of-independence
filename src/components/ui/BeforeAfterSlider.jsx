@@ -2,7 +2,7 @@ import { useRef, useState, useCallback, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HiOutlineArrowsExpand } from 'react-icons/hi'
 
-export default function BeforeAfterSlider({ title, then, now }) {
+export default function BeforeAfterSlider({ title, then, now, thenImage, nowImage }) {
   const trackRef = useRef(null)
   const [pct, setPct] = useState(50)
   const draggingRef = useRef(false)
@@ -56,27 +56,63 @@ export default function BeforeAfterSlider({ title, then, now }) {
         onTouchStart={startDrag}
       >
         {/* NOW layer — full width base */}
-        <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-br from-pk-forest/70 via-pk-deep to-pk-night p-6">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-pk-mint">Now</p>
-          <p className="mt-2 max-w-md text-sm leading-relaxed text-pk-cream sm:text-base">{now}</p>
+        <div className="absolute inset-0">
+          {nowImage ? (
+            <img
+              src={nowImage}
+              alt={`${title} today`}
+              loading="lazy"
+              draggable={false}
+              className="h-full w-full select-none object-cover"
+            />
+          ) : null}
+          <div
+            className={`absolute inset-0 flex flex-col justify-end p-6 ${
+              nowImage
+                ? 'bg-gradient-to-t from-black/80 via-black/10 to-transparent'
+                : 'bg-gradient-to-br from-pk-forest/70 via-pk-deep to-pk-night'
+            }`}
+          >
+            <p className="text-[10px] uppercase tracking-[0.3em] text-pk-mint">Now</p>
+            <p className="mt-2 max-w-md text-sm leading-relaxed text-pk-cream sm:text-base">{now}</p>
+          </div>
         </div>
 
         {/* THEN layer — clipped to reveal based on drag position */}
         <div
-          className="absolute inset-0 flex flex-col justify-end p-6"
-          style={{
-            clipPath: `inset(0 ${100 - pct}% 0 0)`,
-            background:
-              'linear-gradient(135deg, #3a2f1e 0%, #241a10 55%, #150e08 100%)',
-          }}
+          className="absolute inset-0 flex flex-col justify-end overflow-hidden p-6"
+          style={{ clipPath: `inset(0 ${100 - pct}% 0 0)` }}
         >
-          <div
-            className="pointer-events-none absolute inset-0 opacity-40 mix-blend-overlay"
-            style={{
-              backgroundImage:
-                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-            }}
-          />
+          {thenImage ? (
+            <>
+              <img
+                src={thenImage}
+                alt={`${title}, historically`}
+                loading="lazy"
+                draggable={false}
+                style={{ filter: 'sepia(0.35)' }}
+                className="absolute inset-0 h-full w-full select-none object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
+            </>
+          ) : (
+            <>
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    'linear-gradient(135deg, #3a2f1e 0%, #241a10 55%, #150e08 100%)',
+                }}
+              />
+              <div
+                className="pointer-events-none absolute inset-0 opacity-40 mix-blend-overlay"
+                style={{
+                  backgroundImage:
+                    "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+                }}
+              />
+            </>
+          )}
           <p className="relative text-[10px] uppercase tracking-[0.3em] text-pk-gold">Then</p>
           <p className="relative mt-2 max-w-md text-sm leading-relaxed text-pk-cream/90 sm:text-base">
             {then}
