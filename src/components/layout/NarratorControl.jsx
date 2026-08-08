@@ -30,7 +30,7 @@ export default function NarratorControl() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.96 }}
             transition={{ duration: 0.2 }}
-            className="glass absolute right-0 top-12 z-10 w-64 rounded-2xl p-4"
+            className="glass fixed right-4 top-[4.5rem] z-50 w-[calc(100vw-2rem)] max-w-64 rounded-2xl p-4 sm:absolute sm:right-0 sm:top-12 sm:w-64 sm:max-w-none"
           >
             <p className="text-[10px] uppercase tracking-[0.3em] text-pk-mist">AI Narrator</p>
 

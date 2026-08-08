@@ -195,7 +195,7 @@ export default function CrescentStarGlow({ className = '' }) {
 
   return (
     <div
-      className={`pointer-events-none absolute left-1/2 top-[28%] z-0 h-56 w-72 -translate-x-1/2 -translate-y-1/2 md:top-[30%] md:h-72 md:w-[26rem] ${className}`}
+      className={`pointer-events-none absolute left-1/2 top-[30%] z-0 h-72 w-80 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-96 md:top-[32%] md:h-96 md:w-[34rem] ${className}`}
       aria-hidden
     >
       <canvas ref={canvasRef} className="h-full w-full" />

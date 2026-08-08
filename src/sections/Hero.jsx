@@ -30,7 +30,7 @@ export default function Hero() {
         type="button"
         onClick={() => revealSecret(easterEggFacts.moon, 'secret-star')}
         aria-label="A quiet moon"
-        className="absolute right-[10%] top-[14%] h-20 w-20 cursor-pointer rounded-full bg-[radial-gradient(circle,rgba(232,238,221,0.55),transparent_70%)] blur-sm md:h-28 md:w-28"
+        className="absolute right-[6%] top-[8%] h-12 w-12 cursor-pointer rounded-full bg-[radial-gradient(circle,rgba(232,238,221,0.55),transparent_70%)] blur-sm sm:right-[8%] sm:top-[10%] sm:h-20 sm:w-20 md:h-28 md:w-28"
         animate={{ y: [0, 8, 0], opacity: [0.55, 0.8, 0.55] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
         whileHover={{ scale: 1.1 }}
@@ -52,7 +52,7 @@ export default function Hero() {
             aria-label="The flag of Pakistan"
             className="relative z-10 mx-auto block cursor-pointer"
           >
-            <PakistanFlag className="h-28 w-44 md:h-36 md:w-56" />
+            <PakistanFlag className="h-36 w-56 md:h-44 md:w-72" />
           </button>
         </motion.div>
 

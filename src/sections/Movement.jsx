@@ -72,14 +72,23 @@ export default function Movement() {
               className="glass overflow-hidden rounded-3xl"
             >
               {active.image && (
-                <div className="relative h-56 w-full overflow-hidden sm:h-64">
+                <div className="relative h-72 w-full overflow-hidden sm:h-80 md:h-[26rem]">
+                  {/* Blurred, scaled-up copy fills the frame edge-to-edge */}
+                  <img
+                    src={active.image}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full scale-110 object-cover object-top blur-2xl opacity-60"
+                  />
+                  {/* The real photo, always shown in full — never cropped */}
                   <img
                     src={active.image}
                     alt={active.name}
                     loading="lazy"
-                    className="h-full w-full object-cover object-top"
+                    className="relative z-10 h-full w-full object-contain"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pk-night via-transparent to-transparent" />
+                  <div className="absolute inset-0 z-20 bg-gradient-to-t from-pk-night via-transparent to-transparent" />
                 </div>
               )}
               <div className="p-8 md:p-10">
