@@ -8,6 +8,7 @@ import Wars from '../sections/Wars'
 import ThenNow from '../sections/ThenNow'
 import Museum from '../sections/Museum'
 import Achievements from '../sections/Achievements'
+import NationalSymbols from '../sections/NationalSymbols'
 import InnovationWall from '../sections/InnovationWall'
 import CurrentPakistan from '../sections/CurrentPakistan'
 import Challenges from '../sections/Challenges'
@@ -32,6 +33,7 @@ export default function JourneyPage() {
       <ThenNow />
       <Museum />
       <Achievements />
+      <NationalSymbols />
       <InnovationWall />
       <CurrentPakistan />
       <Challenges />

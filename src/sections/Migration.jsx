@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/ui/SectionHeading'
 import Counter from '../components/ui/Counter'
+import InteractiveSuitcase from '../components/ui/InteractiveSuitcase'
 import { migrationFacts } from '../data/journey'
 
 export default function Migration() {
@@ -72,6 +73,10 @@ export default function Migration() {
               <p className="mt-3 text-sm text-pk-mist">{f.detail}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <InteractiveSuitcase />
         </div>
 
         <motion.p
