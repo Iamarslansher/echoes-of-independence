@@ -20,11 +20,11 @@ export const beforePakistan = [
     title: "Iqbal's Allahabad Address",
     place: 'Allahabad',
     description:
-      'Allama Muhammad Iqbal envisioned a consolidated Muslim state in northwest India — a philosophical foundation for Pakistan.',
+      'Allama Muhammad Iqbal envisioned a consolidated Muslim state in northwest India a philosophical foundation for Pakistan.',
     importance: 'Gave the Pakistan idea intellectual and moral clarity.',
     facts: [
       'Delivered as President of the Muslim League session.',
-      'Spoke of a Muslim India within India — later interpreted as a call for a homeland.',
+      'Spoke of a Muslim India within India later interpreted as a call for a homeland.',
     ],
   },
   {
@@ -33,7 +33,7 @@ export const beforePakistan = [
     title: 'Lahore Resolution',
     place: 'Lahore',
     description:
-      'The Muslim League formally demanded independent states for Muslim-majority regions — the political birth of Pakistan.',
+      'The Muslim League formally demanded independent states for Muslim-majority regions the political birth of Pakistan.',
     importance: 'Transformed a dream into a clear constitutional demand.',
     facts: [
       'Passed on 23 March 1940 at Minto Park (now Iqbal Park), Lahore.',
@@ -89,7 +89,7 @@ export const leaders = [
     years: '1893 – 1967',
     image: '/images/gallery/fatima-jinnah-portrait.jpg',
     quote: 'The success of a nation depends upon the readiness of its people to share responsibility.',
-    bio: 'Dental surgeon, political activist, and steadfast companion to her brother — a symbol of women’s leadership in the Movement.',
+    bio: 'Dental surgeon, political activist, and steadfast companion to her brother a symbol of women’s leadership in the Movement.',
     facts: [
       'Played a vital role in mobilizing women for the League.',
       'Later contested the 1965 presidential election.',
@@ -119,7 +119,7 @@ export const independenceMoments = [
   {
     time: '14 August',
     title: 'Flag of Freedom',
-    text: 'The green-and-white flag — crescent and star — rose as the emblem of a new destiny.',
+    text: 'The green-and-white flag crescent and star rose as the emblem of a new destiny.',
   },
   {
     time: 'Karachi',
@@ -154,7 +154,7 @@ export const wars = [
     year: '1948',
     title: 'First Kashmir War',
     summary:
-      'Conflict erupted over the princely state of Jammu & Kashmir shortly after Partition — shaping a dispute that endures.',
+      'Conflict erupted over the princely state of Jammu & Kashmir shortly after Partition shaping a dispute that endures.',
     respect: 'Remembered for the courage of early volunteers and soldiers defending a fragile new state.',
   },
   {
@@ -168,7 +168,7 @@ export const wars = [
     year: '1971',
     title: 'War & Separation',
     summary:
-      'Civil war in East Pakistan and Indian intervention led to the independence of Bangladesh — a profound national trauma.',
+      'Civil war in East Pakistan and Indian intervention led to the independence of Bangladesh a profound national trauma.',
     respect: 'We remember every life lost and the duty to learn, heal, and build wiser futures.',
   },
   {
@@ -199,7 +199,7 @@ export const achievements = [
     id: 'sports',
     title: 'World Champions',
     year: '1992',
-    text: 'Pakistan lifted the Cricket World Cup in 1992 — a moment of national unity and joy.',
+    text: 'Pakistan lifted the Cricket World Cup in 1992 a moment of national unity and joy.',
     category: 'Sports',
   },
   {
@@ -220,14 +220,14 @@ export const achievements = [
     id: 'health',
     title: 'Medical Progress',
     year: 'Ongoing',
-    text: 'From SIUT’s free transplant care to vaccine drives — healthcare heroes serve millions.',
+    text: 'From SIUT’s free transplant care to vaccine drives healthcare heroes serve millions.',
     category: 'Healthcare',
   },
 ]
 
 export const currentPakistan = [
   { title: 'Digital Pakistan', text: 'National push for broadband, e-governance, and digital public services.' },
-  { title: 'Software Houses', text: 'From Karachi to Islamabad — product teams shipping for global clients.' },
+  { title: 'Software Houses', text: 'From Karachi to Islamabad product teams shipping for global clients.' },
   { title: 'AI & Data', text: 'Startups and labs exploring language AI, vision, and applied machine learning.' },
   { title: 'Cybersecurity', text: 'A rising field protecting banks, telecoms, and critical infrastructure.' },
   { title: 'Universities', text: 'Young talent in CS, design, and engineering ready for the next economy.' },
@@ -286,7 +286,7 @@ export const contributions = [
   {
     id: 'software',
     title: 'Software',
-    prompt: 'Build products the world uses — and Pakistan owns.',
+    prompt: 'Build products the world uses and Pakistan owns.',
     icon: 'code',
   },
   {

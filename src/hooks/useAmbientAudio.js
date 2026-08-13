@@ -31,10 +31,10 @@ function cancelFade() {
  * Fades audio.volume toward `to` using setTimeout rather than
  * requestAnimationFrame. rAF can be fully suspended by the browser when a
  * tab is backgrounded/minimized, which was leaving the fade-out stuck
- * mid-way forever (audio.pause() gated behind the fade completing) —
+ * mid-way forever (audio.pause() gated behind the fade completing)
  * the anthem would keep playing indefinitely if you switched tabs while
  * it faded out. setTimeout keeps firing (throttled, but it fires) even
- * in background tabs, so the fade — and the pause() at the end — always
+ * in background tabs, so the fade and the pause() at the end always
  * completes.
  */
 function fadeVolume(audio, to, { onDone } = {}) {
@@ -61,7 +61,7 @@ function fadeVolume(audio, to, { onDone } = {}) {
 
 /**
  * National anthem playback driven by existing sound / anthem toggles.
- * No autoplay — starts only after user interaction. Smooth fade in/out,
+ * No autoplay starts only after user interaction. Smooth fade in/out,
  * with a hard-stop safety net so it can never keep playing silently
  * forever if a fade gets interrupted.
  */
@@ -88,7 +88,7 @@ export function useAmbientAudio() {
         const playPromise = audio.play()
         if (playPromise?.then) {
           playPromise.then(start).catch(() => {
-            /* Autoplay blocked until a later user gesture — toggles already are gestures */
+            /* Autoplay blocked until a later user gesture toggles already are gestures */
           })
         } else {
           start()
@@ -97,7 +97,7 @@ export function useAmbientAudio() {
         fadeVolume(audio, TARGET_VOLUME)
       }
     } else {
-      // Mute immediately as a hard guarantee of silence — decoupled from
+      // Mute immediately as a hard guarantee of silence decoupled from
       // the fade entirely, so even if the fade logic never completes for
       // any reason, nothing is audible.
       audio.muted = true

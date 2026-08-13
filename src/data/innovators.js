@@ -4,7 +4,7 @@ export const innovators = [
     name: 'Dr. Abdus Salam',
     role: 'Scientist',
     achievement: 'Nobel Prize in Physics',
-    description: 'Pakistan’s first Nobel laureate — electroweak unification that reshaped modern physics.',
+    description: 'Pakistan’s first Nobel laureate electroweak unification that reshaped modern physics.',
     initial: 'AS',
   },
   {
@@ -44,7 +44,7 @@ export const innovators = [
     name: 'Pakistan Freelancers',
     role: 'Freelancers',
     achievement: 'Top global freelance workforce',
-    description: 'Hundreds of thousands earning worldwide — designers, developers, and writers from home.',
+    description: 'Hundreds of thousands earning worldwide designers, developers, and writers from home.',
     initial: 'PF',
   },
   {

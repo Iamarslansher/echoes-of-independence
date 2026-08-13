@@ -19,7 +19,7 @@ export default function PartitionStories() {
         Voices of the Crossing
       </p>
       <p className="mb-6 text-center text-xs text-pk-mist/70">
-        Illustrative composites reflecting documented patterns of the Partition experience —
+        Illustrative composites reflecting documented patterns of the Partition experience
         not accounts of specific named individuals.
       </p>
 

@@ -18,7 +18,7 @@ export const provinces = [
     area: '140,914 km²',
     majorCities: ['Karachi', 'Hyderabad', 'Sukkur', 'Larkana'],
     industries: ['Ports & Trade', 'Finance', 'Textiles', 'Energy'],
-    interestingFact: 'Sindh is home to Karachi — Pakistan’s largest city and main seaport.',
+    interestingFact: 'Sindh is home to Karachi Pakistan’s largest city and main seaport.',
   },
   {
     id: 'kpk',

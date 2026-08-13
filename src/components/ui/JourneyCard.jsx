@@ -220,7 +220,7 @@ export default function JourneyCard() {
           await navigator.share({
             files: [file],
             title: 'My Pakistan Journey',
-            text: 'I just explored the story of Pakistan — here is my journey.',
+            text: 'I just explored the story of Pakistan here is my journey.',
           })
         } catch {
           /* user cancelled */
@@ -263,7 +263,7 @@ export default function JourneyCard() {
       </div>
       <p className="flex items-center gap-1.5 text-center text-xs text-pk-mist/60">
         <HiOutlineSparkles className="text-pk-gold" /> Generated from your badges, quiz score, and
-        dream — nothing is sent anywhere.
+        dream nothing is sent anywhere.
       </p>
     </div>
   )

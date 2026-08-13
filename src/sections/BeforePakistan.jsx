@@ -12,7 +12,7 @@ export default function BeforePakistan() {
         <SectionHeading
           eyebrow="Chapter I"
           title="Before Pakistan"
-          subtitle="Under British rule, a political awakening took shape — from the Muslim League to the Lahore Resolution."
+          subtitle="Under British rule, a political awakening took shape from the Muslim League to the Lahore Resolution."
         />
 
         {/* Stylized map pulse */}

@@ -73,9 +73,9 @@ export default function Quiz() {
     return 'border-white/5 bg-white/[0.02] opacity-50'
   }
 
-  let resultTier = 'Keep exploring — history rewards another look.'
-  if (percent >= 80) resultTier = "Pakistan Expert — that's a near-perfect score."
-  else if (percent >= 50) resultTier = 'Well done — a solid grasp of the story.'
+  let resultTier = 'Keep exploring history rewards another look.'
+  if (percent >= 80) resultTier = "Pakistan Expert that's a near-perfect score."
+  else if (percent >= 50) resultTier = 'Well done a solid grasp of the story.'
 
   return (
     <section id="quiz" className="section-pad relative overflow-hidden" ref={revealRef}>

@@ -21,7 +21,7 @@ function InnovatorCard({ person, index }) {
         onMouseLeave={() => setFlipped(false)}
         onFocus={() => setFlipped(true)}
         onBlur={() => setFlipped(false)}
-        aria-label={`${person.name} — ${person.achievement}`}
+        aria-label={`${person.name} ${person.achievement}`}
         className="relative h-56 w-full text-left [transform-style:preserve-3d]"
         animate={{ rotateY: flipped ? 180 : 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -61,7 +61,7 @@ export default function InnovationWall() {
         <SectionHeading
           eyebrow="Innovation Wall"
           title="The People Building Pakistan"
-          subtitle="Scientists, engineers, and founders — proof already in, that this country produces people who move the needle. Tap or hover a card to read more."
+          subtitle="Scientists, engineers, and founders proof already in, that this country produces people who move the needle. Tap or hover a card to read more."
         />
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">

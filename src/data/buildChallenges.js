@@ -3,7 +3,7 @@ export const buildChallenges = {
     problem: 'Millions of small businesses in Pakistan still run on paper ledgers and WhatsApp orders.',
     idea: 'Build a lightweight, offline-first point-of-sale and inventory app designed for low-bandwidth areas.',
     technology: 'React Native, SQLite for offline sync, and a simple REST backend.',
-    impact: 'Thousands of shopkeepers gain real bookkeeping — and a paper trail that can unlock small business loans.',
+    impact: 'Thousands of shopkeepers gain real bookkeeping and a paper trail that can unlock small business loans.',
   },
   ai: {
     problem: 'Most AI tools barely understand Urdu, let alone Punjabi, Sindhi, or Pashto.',
@@ -31,7 +31,7 @@ export const buildChallenges = {
   },
   environment: {
     problem: 'Smog and water stress are worsening across Punjab and Sindh with little real-time public data.',
-    idea: 'Build a crowdsourced air- and water-quality monitoring network with a public dashboard.',
+    idea: 'Build a crowdsourced air and water-quality monitoring network with a public dashboard.',
     technology: 'Low-cost IoT sensors, a public API, and a mapping dashboard.',
     impact: 'Citizens and policymakers get real data instead of guesswork when air quality turns dangerous.',
   },
@@ -39,12 +39,12 @@ export const buildChallenges = {
     problem: 'Pakistani researchers often lack access to expensive international journals and datasets.',
     idea: 'Build an open-access repository connecting Pakistani university research with global collaborators.',
     technology: 'An open-source publishing platform and a searchable citation index.',
-    impact: 'Local research gets the visibility — and the citations — it deserves globally.',
+    impact: 'Local research gets the visibility and the citations it deserves globally.',
   },
   technology: {
     problem: 'Many rural areas still lack reliable electricity for basic connectivity.',
     idea: 'Build solar-powered community WiFi hubs for villages beyond the grid\'s reach.',
     technology: 'Solar micro-grids, mesh networking, and low-cost routers.',
-    impact: 'A village gets online access for the first time — unlocking education, banking, and commerce.',
+    impact: 'A village gets online access for the first time unlocking education, banking, and commerce.',
   },
 }

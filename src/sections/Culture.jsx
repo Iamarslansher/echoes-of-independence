@@ -13,7 +13,7 @@ export default function Culture() {
         <SectionHeading
           eyebrow="One Country, Many Voices"
           title="Pakistani Culture"
-          subtitle="Six regions, eleven languages — the texture beneath the flag. Explored respectfully, not reduced to a stereotype."
+          subtitle="Six regions, eleven languages the texture beneath the flag. Explored respectfully, not reduced to a stereotype."
         />
 
         <CultureExplorer />

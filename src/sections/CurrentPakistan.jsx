@@ -19,7 +19,7 @@ export default function CurrentPakistan() {
         <SectionHeading
           eyebrow="Chapter VII"
           title="Current Pakistan"
-          subtitle="A digital generation is rewriting what Pakistan can be — in code, design, AI, and enterprise."
+          subtitle="A digital generation is rewriting what Pakistan can be in code, design, AI, and enterprise."
         />
 
         <motion.div

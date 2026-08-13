@@ -13,7 +13,7 @@ export default function Achievements() {
         <SectionHeading
           eyebrow="Chapter VI"
           title="Pakistan's Achievements"
-          subtitle="From space research to software exports — milestones that prove what this nation can do."
+          subtitle="From space research to software exports milestones that prove what this nation can do."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

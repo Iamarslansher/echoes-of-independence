@@ -113,7 +113,7 @@ export default function RadioPakistan() {
         <p className="mt-4 text-center text-xs text-[#c9b896]/80">
           {phase === 'idle' && 'Tune in to hear a recreated 1947 broadcast.'}
           {phase === 'tuning' && 'Searching for the signal…'}
-          {phase === 'broadcasting' && 'On air — recreated narration, not an original recording.'}
+          {phase === 'broadcasting' && 'On air recreated narration, not an original recording.'}
           {phase === 'done' && 'Broadcast ended. Tune in again anytime.'}
         </p>
 

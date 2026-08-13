@@ -13,7 +13,7 @@ export default function ThenNow() {
         <SectionHeading
           eyebrow="Pakistan Then vs Now"
           title="Drag to See What Changed"
-          subtitle="Same cities, same country — a different pace entirely. Drag each slider to compare."
+          subtitle="Same cities, same country a different pace entirely. Drag each slider to compare."
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

@@ -22,7 +22,7 @@ export default function Independence() {
         <SectionHeading
           eyebrow="Chapter III"
           title="Independence"
-          subtitle="14 August 1947 — midnight opened a new chapter in world history."
+          subtitle="14 August 1947 midnight opened a new chapter in world history."
         />
 
         <div className="mb-16">

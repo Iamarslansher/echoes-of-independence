@@ -14,7 +14,7 @@ export default function Legacy() {
         <SectionHeading
           eyebrow="Science, Space & Sport"
           title="Proof in the Record Books"
-          subtitle="From Sonmiani's launch pad to the world's hardest peaks — a look at where Pakistan has already led."
+          subtitle="From Sonmiani's launch pad to the world's hardest peaks a look at where Pakistan has already led."
         />
 
         {/* Science & Space timeline */}

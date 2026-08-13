@@ -19,7 +19,7 @@ export default function BadgeShelf() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.08, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="group relative flex flex-col items-center gap-2"
-            title={badge.unlocked ? badge.description : `Locked — ${badge.description}`}
+            title={badge.unlocked ? badge.description : `Locked ${badge.description}`}
           >
             <motion.div
               animate={

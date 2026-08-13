@@ -10,15 +10,15 @@ export const thenNowComparisons = [
   {
     id: 'karachi',
     title: 'Karachi',
-    then: 'A growing port city under the Raj — warehouses, docks, and monsoon trade winds.',
-    now: 'Pakistan’s financial engine — fintech, freelancers, ports, and a global coastline hub.',
+    then: 'A growing port city under the Raj warehouses, docks, and monsoon trade winds.',
+    now: 'Pakistan’s financial engine fintech, freelancers, ports, and a global coastline hub.',
     thenImage: '/images/gallery/karachi-then.jpg',
     nowImage: '/images/gallery/karachi-now.jpg',
   },
   {
     id: 'islamabad',
     title: 'Islamabad',
-    then: 'Hills and scrubland before the capital was planned — quiet Margalla foothills.',
+    then: 'Hills and scrubland before the capital was planned quiet Margalla foothills.',
     now: 'A planned capital of embassies, universities, policy, and green boulevards.',
     thenImage: '/images/gallery/islamabad-then.jpg',
     nowImage: '/images/gallery/islamabad-now.jpg',
@@ -38,7 +38,7 @@ export const thenNowComparisons = [
   {
     id: 'tech',
     title: 'Technology',
-    then: 'Ink, typewriters, and radio — news traveling at the speed of paper.',
+    then: 'Ink, typewriters, and radio news traveling at the speed of paper.',
     now: 'Smartphones, cloud, AI labs, and a generation shipping software worldwide.',
     nowImage: '/images/gallery/ai-robot-flag.jpg',
   },

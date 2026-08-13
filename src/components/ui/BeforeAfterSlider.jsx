@@ -55,7 +55,7 @@ export default function BeforeAfterSlider({ title, then, now, thenImage, nowImag
         onMouseDown={startDrag}
         onTouchStart={startDrag}
       >
-        {/* NOW layer — full width base */}
+        
         <div className="absolute inset-0">
           {nowImage ? (
             <img
@@ -78,7 +78,6 @@ export default function BeforeAfterSlider({ title, then, now, thenImage, nowImag
           </div>
         </div>
 
-        {/* THEN layer — clipped to reveal based on drag position */}
         <div
           className="absolute inset-0 flex flex-col justify-end overflow-hidden p-6"
           style={{ clipPath: `inset(0 ${100 - pct}% 0 0)` }}

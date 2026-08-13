@@ -27,10 +27,10 @@ export const timeMachineYears = [
   { year: '1998', id: 'achievements', mood: 'dawn', blurb: 'Pakistan tests nuclear capability at Chagai.' },
   { year: '2005', id: 'challenges', mood: 'solemn', blurb: 'A devastating earthquake tests national resilience.' },
   { year: '2010', id: 'challenges', mood: 'solemn', blurb: 'Catastrophic floods affect millions nationwide.' },
-  { year: '2013', id: 'current', mood: 'green', blurb: "A civilian government completes a full term for the first time — power transfers peacefully." },
+  { year: '2013', id: 'current', mood: 'green', blurb: "A civilian government completes a full term for the first time power transfers peacefully." },
   { year: '2020', id: 'current', mood: 'green', blurb: 'A digitally-connected generation begins reshaping the economy.' },
   { year: 'Today', id: 'current', mood: 'green', blurb: 'Digital Pakistan, in progress.' },
-  { year: '2050', id: 'future', mood: 'neon', blurb: 'A future horizon — still being written.' },
+  { year: '2050', id: 'future', mood: 'neon', blurb: 'A future horizon still being written.' },
 ]
 
 export const moodStyles = {

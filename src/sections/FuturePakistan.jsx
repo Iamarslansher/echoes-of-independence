@@ -26,7 +26,7 @@ export default function FuturePakistan() {
         <SectionHeading
           eyebrow="Chapter IX"
           title="Future Pakistan"
-          subtitle="AI, green energy, space, and a digital economy — the skyline we have not built yet."
+          subtitle="AI, green energy, space, and a digital economy the skyline we have not built yet."
         />
 
         <motion.div

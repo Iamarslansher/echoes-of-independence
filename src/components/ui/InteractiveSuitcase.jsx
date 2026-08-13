@@ -30,7 +30,7 @@ export default function InteractiveSuitcase() {
             What did they carry?
           </span>
           <span className="max-w-sm text-sm text-pk-mist">
-            Tap the suitcase to open it — eight things families carried across a new
+            Tap the suitcase to open it eight things families carried across a new
             border in 1947.
           </span>
         </motion.button>

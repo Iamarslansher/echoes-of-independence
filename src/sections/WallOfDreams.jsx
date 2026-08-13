@@ -52,7 +52,7 @@ export default function WallOfDreams() {
         <SectionHeading
           eyebrow="Our Dreams for Pakistan"
           title="What are you building?"
-          subtitle="Write one line. It stays only on your device — no account, no backend, just your word to yourself."
+          subtitle="Write one line. It stays only on your device no account, no backend, just your word to yourself."
         />
 
         <form
@@ -113,7 +113,7 @@ export default function WallOfDreams() {
 
         {ownDreams.length === 0 && (
           <p className="mt-8 text-center text-xs uppercase tracking-widest text-pk-mist/40">
-            The dimmer cards above are examples — yours will glow green.
+            The dimmer cards above are examples yours will glow green.
           </p>
         )}
       </div>

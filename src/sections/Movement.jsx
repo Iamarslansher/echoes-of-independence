@@ -28,7 +28,7 @@ export default function Movement() {
         <SectionHeading
           eyebrow="Chapter II"
           title="Pakistan Movement"
-          subtitle="Leaders who turned a vision into a nation — through resolve, poetry, courage, and statecraft."
+          subtitle="Leaders who turned a vision into a nation through resolve, poetry, courage, and statecraft."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
@@ -81,7 +81,7 @@ export default function Movement() {
                     loading="lazy"
                     className="absolute inset-0 h-full w-full scale-110 object-cover object-top blur-2xl opacity-60"
                   />
-                  {/* The real photo, always shown in full — never cropped */}
+                  {/* The real photo, always shown in full never cropped */}
                   <img
                     src={active.image}
                     alt={active.name}
@@ -119,7 +119,7 @@ export default function Movement() {
             viewport={{ once: true }}
           >
             The Lahore Resolution of 23 March 1940 crystallized the demand for independent states for
-            Muslim-majority regions — the political birth certificate of Pakistan.
+            Muslim-majority regions the political birth certificate of Pakistan.
           </motion.p>
           <motion.img
             src="/images/gallery/lahore-resolution-text.jpg"
@@ -157,7 +157,7 @@ export default function Movement() {
               rel="noreferrer noopener"
               className="underline hover:text-pk-mist/70"
             >
-              talhataram
+              Arsala Sher
             </a>
             , licensed{' '}
             <a

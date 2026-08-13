@@ -13,7 +13,7 @@ export default function QuoteBlock({ quote, author, className = '' }) {
         “
       </span>
       <p className="display text-2xl italic leading-snug text-pk-cream md:text-3xl">{quote}</p>
-      {author && <footer className="mt-4 text-sm tracking-wide text-pk-mist">— {author}</footer>}
+      {author && <footer className="mt-4 text-sm tracking-wide text-pk-mist">{author}</footer>}
     </motion.blockquote>
   )
 }

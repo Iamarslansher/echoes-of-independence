@@ -20,7 +20,7 @@ export default function LanguageWall() {
   return (
     <div className="mx-auto max-w-4xl">
       <p className="mb-6 text-center text-sm text-pk-mist">
-        Tap a language to see — and hear — how to say hello.
+        Tap a language to see and hear how to say hello.
       </p>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
         {languages.map((lang, i) => (

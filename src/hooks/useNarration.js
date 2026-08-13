@@ -16,7 +16,7 @@ export function useNarration() {
   const sectionRef = useRef('hero')
   // Mirror the latest state in refs so speakSection always reads fresh
   // values even when called from an async callback (rAF/setTimeout)
-  // whose closure captured an older render — this was the bug that made
+  // whose closure captured an older render this was the bug that made
   // the very first "Play" press silently do nothing.
   const enabledRef = useRef(false)
   const langRef = useRef('en')

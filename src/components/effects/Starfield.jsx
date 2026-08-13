@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
 
-/** Procedural starfield for night-sky sections */
+
 export default function Starfield({ count = 80, className = '' }) {
   const stars = useMemo(
     () =>

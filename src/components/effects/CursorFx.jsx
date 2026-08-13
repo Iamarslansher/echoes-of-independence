@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-/** Soft custom cursor with trailing glow — fine pointers only */
 export default function CursorFx() {
   const [pos, setPos] = useState({ x: -100, y: -100 })
   const [hover, setHover] = useState(false)

@@ -3,10 +3,7 @@ import { useEffect, useRef } from 'react'
 const PARTICLE_COUNT = 220
 const FLOAT_COUNT = 36
 
-/**
- * Soft green/white light particles forming a crescent moon and five-pointed star.
- * Drawn on canvas behind the hero flag for a cinematic bloom look at ~60 FPS.
- */
+
 function buildTargets(w, h) {
   const targets = []
   const cx = w * 0.5
@@ -118,7 +115,7 @@ export default function CrescentStarGlow({ className = '' }) {
       if (!prefersReduced) form += (1 - form) * 0.035
       const eased = 1 - (1 - form) ** 3
 
-      // Soft volumetric glow behind the emblem
+
       const glow = ctx.createRadialGradient(w * 0.5, h * 0.52, 0, w * 0.5, h * 0.52, Math.min(w, h) * 0.55)
       glow.addColorStop(0, `rgba(29, 185, 84, ${0.18 * eased})`)
       glow.addColorStop(0.45, `rgba(244, 247, 242, ${0.08 * eased})`)

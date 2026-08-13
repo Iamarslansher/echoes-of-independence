@@ -36,7 +36,7 @@ export default function Contribution() {
         <SectionHeading
           eyebrow="Chapter X"
           title="What will YOU build for Pakistan?"
-          subtitle="Choose a path. Your contribution — however small it feels today — is the next line of this story."
+          subtitle="Choose a path. Your contribution however small it feels today is the next line of this story."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

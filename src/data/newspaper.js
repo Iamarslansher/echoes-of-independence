@@ -5,7 +5,7 @@ export const newspaperEditions = [
     masthead: 'The Dawn Chronicle',
     headline: 'Muslim League Founded at Dhaka',
     subhead: 'Leaders unite to safeguard political rights under British India',
-    body: 'Delegates gathered at Ahsan Manzil as a new political voice for Muslims of the subcontinent took form — an organization that would one day help birth a nation.',
+    body: 'Delegates gathered at Ahsan Manzil as a new political voice for Muslims of the subcontinent took form an organization that would one day help birth a nation.',
     imageLabel: 'Dhaka · 1906',
   },
   {
@@ -14,7 +14,7 @@ export const newspaperEditions = [
     masthead: 'Allahabad Gazette',
     headline: "Iqbal Calls for a Muslim Homeland",
     subhead: 'Poet-philosopher sketches the idea that becomes Pakistan',
-    body: 'In a presidential address that would echo for generations, Allama Iqbal envisioned a consolidated Muslim state in northwest India — giving the dream intellectual clarity.',
+    body: 'In a presidential address that would echo for generations, Allama Iqbal envisioned a consolidated Muslim state in northwest India giving the dream intellectual clarity.',
     imageLabel: 'Allahabad · 1930',
   },
   {
@@ -23,7 +23,7 @@ export const newspaperEditions = [
     masthead: 'Lahore Times',
     headline: 'Lahore Resolution Adopted',
     subhead: 'Muslim League demands independent states for Muslim-majority regions',
-    body: 'At Minto Park, history turned. The demand for sovereign Muslim states became a clear constitutional call — remembered each year as Pakistan Day.',
+    body: 'At Minto Park, history turned. The demand for sovereign Muslim states became a clear constitutional call remembered each year as Pakistan Day.',
     imageLabel: 'Lahore · 1940',
   },
   {
@@ -31,7 +31,7 @@ export const newspaperEditions = [
     date: '15 August 1947',
     masthead: 'Freedom Herald',
     headline: 'PAKISTAN IS BORN',
-    subhead: 'At midnight, a new dominion rises — green flag against the night sky',
+    subhead: 'At midnight, a new dominion rises green flag against the night sky',
     body: 'Quaid-e-Azam Muhammad Ali Jinnah takes oath in Karachi. Millions cross new borders. The world watches as a nation steps into dawn.',
     imageLabel: 'Karachi · 1947',
     image: '/images/gallery/leaders-group.jpg',

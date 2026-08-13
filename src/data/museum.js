@@ -4,7 +4,7 @@ export const museumArtifacts = [
     title: "Quaid’s Fountain Pen",
     category: 'Quaid-e-Azam',
     era: '1940s',
-    front: 'A symbol of constitutional craft — law turned into a nation.',
+    front: 'A symbol of constitutional craft law turned into a nation.',
     back: 'Jinnah’s precision as a barrister shaped the legal path to Pakistan. Every signature carried the weight of a people’s hope.',
   },
   {
@@ -32,7 +32,7 @@ export const museumArtifacts = [
     era: '1948',
     image: '/images/gallery/museum-currency-100rupee.jpg',
     front: 'A fragile new economy finding its face.',
-    back: 'Early Pakistani currency carried symbols of sovereignty — green, crescents, and the promise of self-rule.',
+    back: 'Early Pakistani currency carried symbols of sovereignty green, crescents, and the promise of self-rule.',
   },
   {
     id: 'stamp-47',
@@ -58,7 +58,7 @@ export const museumArtifacts = [
     category: 'Letters',
     era: '1947',
     front: 'Ink stained with migration and memory.',
-    back: 'Families wrote across new lines on the map — letters of loss, reunion, and the courage to begin again.',
+    back: 'Families wrote across new lines on the map letters of loss, reunion, and the courage to begin again.',
   },
   {
     id: 'flag-cloth',
@@ -66,7 +66,7 @@ export const museumArtifacts = [
     category: 'Flags',
     era: '1947',
     front: 'Crescent and star against the night of freedom.',
-    back: 'The flag’s white for minorities, green for the Muslim majority — unity woven into cloth.',
+    back: 'The flag’s white for minorities, green for the Muslim majority unity woven into cloth.',
   },
   {
     id: 'radio-mic',
@@ -74,7 +74,7 @@ export const museumArtifacts = [
     category: 'Objects',
     era: '1947',
     front: 'The voice that announced a nation’s birth.',
-    back: 'Radio carried midnight declarations into homes — a shared soundtrack of independence.',
+    back: 'Radio carried midnight declarations into homes a shared soundtrack of independence.',
   },
   {
     id: 'train-token',
@@ -82,6 +82,6 @@ export const museumArtifacts = [
     category: 'Objects',
     era: '1947',
     front: 'A metal reminder of journeys without maps.',
-    back: 'Tokens and tickets marked one of history’s largest migrations — hope packed into crowded carriages.',
+    back: 'Tokens and tickets marked one of history’s largest migrations hope packed into crowded carriages.',
   },
 ]

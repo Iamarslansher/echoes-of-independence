@@ -9,7 +9,7 @@ export function useActiveJourney(ready = true) {
 
   useEffect(() => {
     // Sections don't exist in the DOM until the loader finishes and
-    // JourneyPage mounts — wait for that instead of observing nothing.
+    // JourneyPage mounts wait for that instead of observing nothing.
     if (!ready) return
     const sectionIds = [
       'hero',

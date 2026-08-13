@@ -8,7 +8,7 @@ export default function Challenges() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Chapter VIII"
-          title="Challenges — and Hope"
+          title="Challenges and Hope"
           subtitle="Every difficulty is a design brief for the next generation. We name the problem so we can build the solution."
         />
 

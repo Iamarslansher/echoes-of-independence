@@ -47,7 +47,7 @@ export default function ADayIn1947() {
               A Day That Changed Everything
             </span>
             <span className="max-w-sm text-sm text-pk-mist">
-              Step through 14 August 1947 — morning, to midnight.
+              Step through 14 August 1947 morning, to midnight.
             </span>
           </button>
         ) : (

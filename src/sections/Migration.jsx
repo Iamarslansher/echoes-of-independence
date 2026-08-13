@@ -12,7 +12,7 @@ export default function Migration() {
         <SectionHeading
           eyebrow="Chapter IV"
           title="Migration"
-          subtitle="One of history’s largest displacements — families crossing new borders with little more than hope and memory."
+          subtitle="One of history’s largest displacements families crossing new borders with little more than hope and memory."
         />
 
         <motion.div
@@ -90,7 +90,7 @@ export default function Migration() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Suitcases held photographs. Hearts held tomorrow. Nations were redrawn — but human dignity
+          Suitcases held photographs. Hearts held tomorrow. Nations were redrawn but human dignity
           remained the true cargo.
         </motion.p>
       </div>

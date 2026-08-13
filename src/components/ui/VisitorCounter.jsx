@@ -25,7 +25,7 @@ function AnimatedNumber({ value }) {
     }
     raf = requestAnimationFrame(step)
     return () => cancelAnimationFrame(raf)
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- only re-run when the target value changes
+   
   }, [value])
 
   return <span>{display.toLocaleString()}</span>
@@ -44,7 +44,7 @@ export default function VisitorCounter() {
       title={
         isGlobal
           ? 'Total visits across all visitors'
-          : 'Counting locally — the shared counter is warming up'
+          : 'Counting locally the shared counter is warming up'
       }
     >
       <HiOutlineEye className="text-pk-mint/70" />

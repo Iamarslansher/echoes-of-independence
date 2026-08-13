@@ -50,11 +50,11 @@ export default function ShareJourneyButton() {
           await navigator.share({
             files: [file],
             title: 'My Pakistan Journey',
-            text: 'I explored the story of Pakistan — here is my journey.',
+            text: 'I explored the story of Pakistan here is my journey.',
           })
           return
         } catch {
-          /* user cancelled or share failed — fall through to download */
+         console.warn('Sharing failed, falling back to download')
         }
       }
     }

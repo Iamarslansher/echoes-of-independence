@@ -10,7 +10,7 @@ export default function Wars() {
         <SectionHeading
           eyebrow="Chapter V"
           title="Wars & Sacrifices"
-          subtitle="A respectful remembrance of conflict and courage — honouring those who gave everything."
+          subtitle="A respectful remembrance of conflict and courage honouring those who gave everything."
         />
 
         <div className="grid gap-5 md:grid-cols-2">

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 
-/** CSS/SVG Pakistan flag with gentle wave */
 export default function PakistanFlag({ className = '', waving = true }) {
   return (
     <motion.div

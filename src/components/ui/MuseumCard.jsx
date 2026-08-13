@@ -61,7 +61,7 @@ export default function MuseumCard({ artifact, index }) {
           type="button"
           data-cursor="hover"
           onClick={() => setFlipped((f) => !f)}
-          aria-label={`${artifact.title} — tap to ${flipped ? 'show summary' : 'read more'}`}
+          aria-label={`${artifact.title} tap to ${flipped ? 'show summary' : 'read more'}`}
           className="absolute inset-0 h-full w-full text-left"
           style={{ transformStyle: 'preserve-3d' }}
           animate={{ rotateY: flipped ? 180 : 0 }}

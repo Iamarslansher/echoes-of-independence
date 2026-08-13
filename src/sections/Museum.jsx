@@ -13,7 +13,7 @@ export default function Museum() {
         <SectionHeading
           eyebrow="Digital Museum"
           title="Objects That Carried History"
-          subtitle="A pen, a resolution, a train token — small things that were present for the biggest moments. Move your cursor over a case, then tap to read its story."
+          subtitle="A pen, a resolution, a train token small things that were present for the biggest moments. Move your cursor over a case, then tap to read its story."
         />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

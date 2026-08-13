@@ -17,7 +17,7 @@ export default function Newspaper() {
         <SectionHeading
           eyebrow="From the Archives"
           title="The Story, As It Broke"
-          subtitle="Four moments, told the way a front page might have carried them — headlines that mark how the idea of Pakistan moved from argument to nation."
+          subtitle="Four moments, told the way a front page might have carried them headlines that mark how the idea of Pakistan moved from argument to nation."
         />
 
         <div data-reveal className="mb-10 flex flex-wrap justify-center gap-2">

@@ -13,7 +13,7 @@ export const nationalSymbols = [
     title: 'The Crescent',
     tagline: 'Progress and light',
     story:
-      'A crescent moon has long symbolized Islamic identity across many nations. On Pakistan\'s flag, it stands for progress — reflecting light rather than being a light source itself, much as a young nation reflects and grows from what came before it.',
+      'A crescent moon has long symbolized Islamic identity across many nations. On Pakistan\'s flag, it stands for progress reflecting light rather than being a light source itself, much as a young nation reflects and grows from what came before it.',
   },
   {
     id: 'star',
@@ -21,7 +21,7 @@ export const nationalSymbols = [
     title: 'The Star',
     tagline: 'Knowledge and light',
     story:
-      'The five-pointed star beside the crescent represents light and knowledge — an aspiration written into the flag itself at the moment of founding: that the new state would be guided by learning.',
+      'The five-pointed star beside the crescent represents light and knowledge an aspiration written into the flag itself at the moment of founding: that the new state would be guided by learning.',
   },
   {
     id: 'anthem',
@@ -37,7 +37,7 @@ export const nationalSymbols = [
     title: 'Jasmine (Chambeli)',
     tagline: 'National flower',
     story:
-      'Prized for its fragrance and used in garlands across the country, jasmine was designated the national flower for its wide cultivation and its place in everyday Pakistani life — from wedding ceremonies to roadside vendors\' strings of blossom.',
+      'Prized for its fragrance and used in garlands across the country, jasmine was designated the national flower for its wide cultivation and its place in everyday Pakistani life from wedding ceremonies to roadside vendors\' strings of blossom.',
   },
   {
     id: 'animal',
@@ -69,6 +69,6 @@ export const nationalSymbols = [
     title: 'Field Hockey',
     tagline: 'National sport',
     story:
-      "Pakistan's field hockey team won Olympic gold three times (1960, 1968, 1984) and the Hockey World Cup four times, making hockey the historic source of the country's proudest sporting era — even as cricket has since become the more widely followed game.",
+      "Pakistan's field hockey team won Olympic gold three times (1960, 1968, 1984) and the Hockey World Cup four times, making hockey the historic source of the country's proudest sporting era even as cricket has since become the more widely followed game.",
   },
 ]

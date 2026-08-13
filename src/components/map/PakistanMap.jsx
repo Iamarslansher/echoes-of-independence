@@ -2,13 +2,7 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { provinces, provinceById } from '../../data/provinces'
 
-/**
- * SVG hit areas aligned to public/images/pakistan-map.png (1000×959).
- * These contours were extracted directly from the image itself (color
- * segmentation + connected components + contour tracing), so they follow
- * the actual province boundaries pixel-for-pixel rather than an
- * approximation. Only the four main provinces are interactive.
- */
+
 const HIT_AREAS = [
   {
     id: 'balochistan',

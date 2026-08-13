@@ -61,7 +61,7 @@ export const languages = [
     native: 'براہوئی',
     greeting: 'سلام',
     greetingRoman: 'Salaam',
-    note: 'A Dravidian-family language spoken in parts of Balochistan — linguistically distinct from its neighbors.',
+    note: 'A Dravidian-family language spoken in parts of Balochistan linguistically distinct from its neighbors.',
   },
   {
     id: 'shina',
@@ -85,6 +85,6 @@ export const languages = [
     native: 'بروشسکی',
     greeting: 'اسلام علیکم',
     greetingRoman: 'Assalam-o-Alaikum',
-    note: 'A language isolate — not known to be related to any other living language — spoken in Hunza and Yasin.',
+    note: 'A language isolate not known to be related to any other living language spoken in Hunza and Yasin.',
   },
 ]

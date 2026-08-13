@@ -25,7 +25,6 @@ export default function Hero() {
       <Particles count={22} />
       <Fog />
 
-      {/* Distant soft moon wash — kept subtle so emblem glow remains primary. Hidden easter egg: click it. */}
       <motion.button
         type="button"
         onClick={() => revealSecret(easterEggFacts.moon, 'secret-star')}

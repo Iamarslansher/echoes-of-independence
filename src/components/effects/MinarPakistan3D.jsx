@@ -49,8 +49,7 @@ export default function MinarPakistan3D() {
         if (disposed) return
         const model = gltf.scene
 
-        // Normalize scale/position: fit the model into a consistent view
-        // regardless of its native export scale.
+    
         const box = new THREE.Box3().setFromObject(model)
         const size = new THREE.Vector3()
         box.getSize(size)
@@ -144,7 +143,7 @@ export default function MinarPakistan3D() {
       {loadFailed && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/30 px-6 text-center">
           <span className="font-mono text-xs uppercase tracking-widest text-pk-mist/60">
-            Model couldn't load — check that /models/minar-e-pakistan/scene.gltf is present
+            Model couldn't load check the internet connection or try again later.
           </span>
         </div>
       )}
