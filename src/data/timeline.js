@@ -14,11 +14,23 @@ export const timelineYears = [
 ]
 
 export const timeMachineYears = [
-  { year: '1947', id: 'independence', mood: 'midnight' },
-  { year: '1965', id: 'wars', mood: 'solemn' },
-  { year: '1990', id: 'achievements', mood: 'dawn' },
-  { year: '2025', id: 'current', mood: 'green' },
-  { year: '2050', id: 'future', mood: 'neon' },
+  { year: '1857', id: 'before', mood: 'sepia', blurb: 'The War of Independence begins.' },
+  { year: '1906', id: 'before', mood: 'sepia', blurb: 'The All-India Muslim League is founded.' },
+  { year: '1930', id: 'before', mood: 'sepia', blurb: "Iqbal's Allahabad Address envisions a Muslim homeland." },
+  { year: '1940', id: 'movement', mood: 'sepia', blurb: 'The Lahore Resolution is adopted.' },
+  { year: '1947', id: 'independence', mood: 'midnight', blurb: 'Pakistan is born at midnight.' },
+  { year: '1948', id: 'migration', mood: 'dawn', blurb: 'Millions cross new borders.' },
+  { year: '1956', id: 'achievements', mood: 'dawn', blurb: "Pakistan's first constitution is adopted." },
+  { year: '1965', id: 'wars', mood: 'solemn', blurb: 'The second war with India.' },
+  { year: '1971', id: 'wars', mood: 'solemn', blurb: 'A profound turning point; East Pakistan becomes Bangladesh.' },
+  { year: '1973', id: 'achievements', mood: 'dawn', blurb: 'A new consensus constitution is adopted.' },
+  { year: '1998', id: 'achievements', mood: 'dawn', blurb: 'Pakistan tests nuclear capability at Chagai.' },
+  { year: '2005', id: 'challenges', mood: 'solemn', blurb: 'A devastating earthquake tests national resilience.' },
+  { year: '2010', id: 'challenges', mood: 'solemn', blurb: 'Catastrophic floods affect millions nationwide.' },
+  { year: '2013', id: 'current', mood: 'green', blurb: "A civilian government completes a full term for the first time — power transfers peacefully." },
+  { year: '2020', id: 'current', mood: 'green', blurb: 'A digitally-connected generation begins reshaping the economy.' },
+  { year: 'Today', id: 'current', mood: 'green', blurb: 'Digital Pakistan, in progress.' },
+  { year: '2050', id: 'future', mood: 'neon', blurb: 'A future horizon — still being written.' },
 ]
 
 export const moodStyles = {

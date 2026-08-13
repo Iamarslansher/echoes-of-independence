@@ -1,0 +1,42 @@
+export const dayIn1947Stages = [
+  {
+    id: 'morning',
+    time: 'Morning',
+    icon: '🌤️',
+    title: 'Karachi Wakes to a New Address',
+    text: 'Newspapers carry the news that has been building for months: by midnight, this city will be a capital. Streets fill early — some in celebration, some in disbelief.',
+    mood: 'sepia',
+  },
+  {
+    id: 'afternoon',
+    time: 'Afternoon',
+    icon: '📻',
+    title: 'Radio Carries the Countdown',
+    text: 'Across the new Dominion, families gather around radio sets. Announcements repeat the date, the hour, the significance — a shared soundtrack for a country not yet born.',
+    mood: 'sepia',
+  },
+  {
+    id: 'evening',
+    time: 'Evening',
+    icon: '🕯️',
+    title: 'Crowds Gather in the Dark',
+    text: 'As the sun sets, crowds gather outside the Constituent Assembly and in public squares. Flags — sewn by hand, some finished hours earlier — are held ready.',
+    mood: 'dawn',
+  },
+  {
+    id: 'almost',
+    time: '11:59 PM',
+    icon: '🕰️',
+    title: 'The Last Minute of British India',
+    text: 'The crowd quiets. Even the radio seems to hold its breath. Somewhere, a clock is the only sound left.',
+    mood: 'midnight',
+  },
+  {
+    id: 'midnight',
+    time: '12:00 AM',
+    icon: '🇵🇰',
+    title: 'Pakistan Is Born',
+    text: 'The fifteenth of August begins, and with it, a new nation. What follows tonight is history — what follows tomorrow is now the responsibility of everyone in this new country.',
+    mood: 'midnight',
+  },
+]

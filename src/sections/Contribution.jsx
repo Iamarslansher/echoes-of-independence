@@ -11,6 +11,7 @@ import {
 } from 'react-icons/hi'
 import SectionHeading from '../components/ui/SectionHeading'
 import { contributions } from '../data/journey'
+import { buildChallenges } from '../data/buildChallenges'
 import { useApp } from '../context/AppContext'
 
 const icons = {
@@ -27,6 +28,7 @@ const icons = {
 export default function Contribution() {
   const { selectedContribution, setSelectedContribution } = useApp()
   const selected = contributions.find((c) => c.id === selectedContribution)
+  const challenge = selected ? buildChallenges[selected.id] : null
 
   return (
     <section id="contribute" className="section-pad relative">
@@ -65,20 +67,46 @@ export default function Contribution() {
         </div>
 
         <AnimatePresence>
-          {selected && (
+          {selected && challenge && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               className="overflow-hidden"
             >
-              <div className="glass mt-10 rounded-3xl p-8 text-center md:p-10">
-                <p className="text-xs uppercase tracking-[0.35em] text-pk-mint">Your pledge</p>
-                <p className="display mt-3 text-3xl text-pk-cream md:text-4xl">
+              <motion.div
+                key={selected.id}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.4 }}
+                className="glass mt-10 rounded-3xl p-8 text-center md:p-10"
+              >
+                <p className="text-xs uppercase tracking-[0.35em] text-pk-mint">
+                  Your challenge · {selected.title}
+                </p>
+                <p className="display mx-auto mt-3 max-w-2xl text-2xl text-pk-cream md:text-3xl">
+                  {challenge.idea}
+                </p>
+
+                <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-5 text-left sm:grid-cols-2">
+                  <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-[10px] uppercase tracking-widest text-pk-gold">The Problem</p>
+                    <p className="mt-2 text-sm leading-relaxed text-pk-mist">{challenge.problem}</p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-[10px] uppercase tracking-widest text-pk-gold">The Technology</p>
+                    <p className="mt-2 text-sm leading-relaxed text-pk-mist">{challenge.technology}</p>
+                  </div>
+                  <div className="sm:col-span-2 rounded-xl border border-pk-mint/20 bg-pk-mint/[0.05] p-5">
+                    <p className="text-[10px] uppercase tracking-widest text-pk-mint">Potential Impact</p>
+                    <p className="mt-2 text-sm leading-relaxed text-pk-cream">{challenge.impact}</p>
+                  </div>
+                </div>
+
+                <p className="mx-auto mt-8 max-w-lg font-mono text-xs uppercase tracking-widest text-pk-mist/60">
                   I will build for Pakistan through {selected.title}.
                 </p>
-                <p className="mx-auto mt-4 max-w-lg text-pk-mist">{selected.prompt}</p>
-              </div>
+              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>

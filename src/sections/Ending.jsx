@@ -4,6 +4,7 @@ import Fireworks from '../components/effects/Fireworks'
 import Starfield from '../components/effects/Starfield'
 import Button from '../components/ui/Button'
 import BadgeShelf from '../components/ui/BadgeShelf'
+import ShareJourneyButton from '../components/ui/ShareJourneyButton'
 
 export default function Ending() {
   return (
@@ -45,7 +46,7 @@ export default function Ending() {
         </motion.div>
 
         <motion.div
-          className="mt-8"
+          className="mt-8 flex flex-wrap items-center justify-center gap-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -54,6 +55,7 @@ export default function Ending() {
           <Button as="a" href="#contribute" variant="gold">
             Build Pakistan
           </Button>
+          <ShareJourneyButton />
         </motion.div>
       </div>
     </section>

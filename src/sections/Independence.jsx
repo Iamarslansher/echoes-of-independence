@@ -6,6 +6,8 @@ import Starfield from '../components/effects/Starfield'
 import { independenceMoments } from '../data/journey'
 import { useApp } from '../context/AppContext'
 import { HiOutlineMusicNote } from 'react-icons/hi'
+import ADayIn1947 from '../components/ui/ADayIn1947'
+import RadioPakistan from '../components/ui/RadioPakistan'
 
 export default function Independence() {
   const { anthemOn, toggleAnthem } = useApp()
@@ -22,6 +24,10 @@ export default function Independence() {
           title="Independence"
           subtitle="14 August 1947 — midnight opened a new chapter in world history."
         />
+
+        <div className="mb-16">
+          <ADayIn1947 />
+        </div>
 
         <div className="flex flex-col items-center gap-10">
           <motion.div
@@ -55,6 +61,10 @@ export default function Independence() {
             <HiOutlineMusicNote />
             {anthemOn ? 'Anthem Playing' : 'Play National Anthem'}
           </button>
+
+          <div className="mt-6 w-full">
+            <RadioPakistan />
+          </div>
 
           <div className="mt-8 grid w-full gap-4 md:grid-cols-3">
             {independenceMoments.map((m, i) => (

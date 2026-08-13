@@ -6,6 +6,7 @@ import Button from '../components/ui/Button'
 import Confetti from '../components/effects/Confetti'
 import { quizQuestions } from '../data/quiz'
 import { useApp } from '../context/AppContext'
+import { writeJSON } from '../utils/scroll'
 import { useGsapReveal } from '../hooks/useGsapReveal'
 
 export default function Quiz() {
@@ -26,6 +27,7 @@ export default function Quiz() {
     if (phase !== 'result') return
     achievements.unlock('history-explorer')
     if (percent >= 80) achievements.unlock('pakistan-expert')
+    writeJSON('eoi-quiz-result', { score, total, percent, at: Date.now() })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase])
 

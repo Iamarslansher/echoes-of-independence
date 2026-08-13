@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import SectionHeading from '../components/ui/SectionHeading'
 import Counter from '../components/ui/Counter'
 import InteractiveSuitcase from '../components/ui/InteractiveSuitcase'
+import PartitionStories from '../components/ui/PartitionStories'
 import { migrationFacts } from '../data/journey'
 
 export default function Migration() {
@@ -77,6 +78,10 @@ export default function Migration() {
 
         <div className="mt-16">
           <InteractiveSuitcase />
+        </div>
+
+        <div className="mt-16">
+          <PartitionStories />
         </div>
 
         <motion.p

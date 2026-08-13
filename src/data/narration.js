@@ -1,4 +1,9 @@
 /** Section narration scripts — English now, Urdu-ready structure */
+export const radioBroadcastScript = {
+  en: 'This is a recreated broadcast, not an original recording. Fellow citizens — at the stroke of midnight, on the fourteenth of August, nineteen forty-seven, the dominion of Pakistan comes into being. A new chapter opens for millions who have waited, hoped, and sacrificed for this moment.',
+  ur: 'یہ ایک دوبارہ بنایا گیا نشریہ ہے، اصل ریکارڈنگ نہیں۔ ہم وطنو — چودہ اگست انیس سو سینتالیس کی آدھی رات کو، مملکت پاکستان وجود میں آتی ہے۔',
+}
+
 export const narrationScripts = {
   hero: {
     en: 'Welcome to Echoes of Independence — the story of Pakistan. A dream that changed history.',
